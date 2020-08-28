@@ -1,0 +1,149 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.btn {
+    width: 180px;
+    height: 180px;
+    background: #ABF92B;
+    display: inline-block;
+    border:1px solid #94D529;
+    text-align: center;
+    line-height: 180px;
+    user-select: none;
+    font-size: 46px;
+    border-radius: 40px;
+}
+.btn:nth-child(18){
+    width: 360px;
+}
+.btn:active{
+    background: #94D529;
+}
+#calc-wrap {
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #eee;
+}
+#calc {
+    width: 720px;
+    display: inline-block;
+    margin: 0 auto;
+}
+#inputVal {
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+    font-size: 46px;
+    resize: none;
+    padding: 10px;
+}
+#inputVal:focus{
+   outline: none;
+}
+
+@media screen and (max-width: 799px){
+    .btn{
+        width: 140px;
+        height: 140px;
+        font-size: 36px;
+        line-height: 140px;
+    }
+    #calc{
+        width: 560px;
+    }
+    #inputVal{
+        font-size: 40px;
+        padding: 5px;
+        height: 20vh;
+    }
+    .btn:nth-child(18){
+        width: 280px;
+    }
+}
+@media screen and (max-width: 580px){
+     .btn{
+        width: 120px;
+        height: 120px;
+        font-size: 36px;
+        line-height: 120px;
+    }
+    #calc{
+        width: 480px;
+    }
+    #inputVal{
+        font-size: 40px;
+        padding: 5px;
+        height: 20vh;
+    }
+    .btn:nth-child(18){
+        width: 240px;
+    }
+}
+@media screen and (max-width: 517px){
+    .btn{
+        width: 100px;
+        height: 100px;
+        font-size: 36px;
+        line-height: 100px;
+    }
+    #calc{
+        width: 400px;
+    }
+    #inputVal{
+        font-size: 40px;
+        padding: 5px;
+        height: 20vh;
+    }
+    .btn:nth-child(18){
+        width: 200px;
+    }
+}
+@media screen and (max-width: 425px){
+    .btn{
+        width: 90px;
+        height: 90px;
+        font-size: 36px;
+        line-height: 80px;
+        border-radius: 30px;
+    }
+    #calc{
+        width: 360px;
+    }
+    #inputVal{
+        font-size: 40px;
+        padding: 5px;
+        height: 20vh;
+    }
+    .btn:nth-child(18){
+        width: 180px;
+    }
+}
+@media screen and (max-width: 387px){
+    .btn{
+        width: 80px;
+        height: 80px;
+        font-size: 36px;
+        line-height: 80px;
+        border-radius: 30px;
+    }
+    #calc{
+        width: 360px;
+        align-items: flex-start;
+    }
+    #inputVal{
+        font-size: 40px;
+        padding: 5px;
+        height: 20vh;
+    }
+    .btn:nth-child(18){
+        width: 160px;
+    }
+}
